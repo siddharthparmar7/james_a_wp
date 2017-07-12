@@ -1,0 +1,1496 @@
+/*
+Theme Name: foe_james_a
+Author: Sid Parmar
+Description: Description
+Version: 1.0.0
+Text Domain: foe_james_a
+
+
+
+#>>>>>>>>>>>>>>>>>> Site wide specs <<<<<<<<<<<<<<<<<
+
+Fonts (both are Google Fonts):
+For all san-serif fonts: Open Sans
+For all serif fonts (typically seen in lead-headings): Droid serif
+Body copy: 15px
+Whites: #fff
+Blacks: #111
+Dark Greys: #333
+Lighter Greys (footer etc): #565656
+Blue: #347ed1
+
+
+#>>>>>>>>>>>>>>>>>>>>> Normalize <<<<<<<<<<<<<<<<<<<<<
+
+*/
+* {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Adjust Body to account for height of sticky nav only */
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* >>>>>>>>>> FOE <<<<<<<<<< */
+
+.wpb_gmaps_widget .wpb_wrapper {padding: 0 !important; background-color: none !important;}
+
+
+/* >>>>>>>>>> TYPOGRAPHY <<<<<<<<<< */
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
+/*font-family: 'Droid Serif', serif;*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+/*font-family: 'Open Sans', sans-serif;*/
+
+html{
+	font-size: 62.5%;
+}
+body{
+	word-break: normal;
+	hyphens: auto;
+	/*font-family:"Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 900;
+}
+h1 {
+	font-size: 4rem;
+}
+h2{
+	font-size: 2.4rem;
+	font-family: 'Droid Serif', serif;
+}
+h3{
+	font-size: 2rem;
+}
+h4{
+	font-size: 1.8rem;
+}
+h5{
+	font-size: 1.6rem;
+}
+h6{
+	font-size: 1.4rem;
+}
+span, pre, ol, table, thead, tfoot, tr, td, time, blockquote{
+	font-size: 15px;
+	font-family: 'droid serif';
+}
+
+a{
+	color: #2196F3;
+}
+a:hover, a:focus{
+	color: #1976D2;
+	text-decoration: none;
+}
+a:active{
+	color: #1565C0;
+}
+
+.material-icons {
+	font-size: 2.4rem;
+	line-height: inherit;
+}
+
+/* Stop Breaking */
+* {
+	-moz-hyphens:none;
+	-ms-hyphens:none;
+	-webkit-hyphens: none;
+	hyphens:none;
+}
+* {
+	word-break:keep-all;
+}
+
+/*>>>>>>>>>> Elements <<<<<<<<<<<*/
+html {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+/* >>>>>>>>>>>> overwriting Bootstrap <<<<<<<<<<<<*/
+nav{
+	position: relative;
+	z-index: 10;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: transparent;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	max-height: 380px;
+	height: 380px;
+}
+
+.navbar-default, #menu-footermenu{
+	background-color: transparent;
+	border: none;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a, #menu-footermenu>li>a, .navbar-default .navbar-nav>li>a>span{
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	font-weight: 700;
+}
+
+#menu-footermenu>li>a{
+	font-size: 12px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover, #menu-footermenu>li>a:hover, .navbar-nav>li>a>span:hover{
+	color: #2e6da4;
+}
+
+.nav>li>a>img {
+	max-width: none;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.btn-primary:hover{
+	background-color: #2e6da4;
+}
+
+.logo{
+	height: auto;
+	width: 185px;
+}
+
+.jumbotron{
+	margin-bottom: 0;
+}
+
+.overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 10;
+background: black;
+opacity: 0.7;
+}
+
+.navbar-brand{
+	margin-right: 0;
+}
+
+.btn-primary{
+	text-transform: uppercase;
+	background-color: transparent;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 13px;
+}
+
+.btn{
+	border-radius: 2px;
+}
+
+/*	common settings  */
+.widget-title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: #565656;
+}
+
+.widget label{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 20px;
+}
+
+/* [][][][][][][][][][][][][][] */
+/* >>>>>>>>>> MOBILE <<<<<<<<<< */
+/* [][][][][][][][][][][][][][] */
+
+
+/*>>>>>>>>>>>> header <<<<<<<<<<<<<<<<<*/
+
+/* black header is just for the mobile devices*/
+header{
+	background-color: black;
+}
+.hero1-wrapper{
+	background-color: #111;
+}
+
+.social-icon-header{
+	height: auto;
+	width: 25px;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.social-icon-header:hover{
+	opacity:0.7;
+}
+
+#desktop-nav{
+	display: none;
+}
+
+/*>>>>>>>>>>>> hero <<<<<<<<<<<<<<<<<*/
+
+#home-hero{
+	position: relative;
+	top: -140px;
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+	background-position: right 35% top 100%;
+}
+
+.home-hero-text{
+	color: white;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.home-hero-text h1{
+	margin-top: -10px;
+	font-size: 2.5rem;
+	line-height: 1.4em;
+}
+
+.home-hero-text p:first-child, .home-hero-text span{
+	font-family: 'Droid Serif', serif;
+	text-transform: capitalize;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.home-hero-text p:last-child{
+	padding-top: 30px;
+}
+
+/*>>>>>>>>>>>> hero2 <<<<<<<<<<<<<<<<<*/
+
+.hero2{
+	height: 700px;
+	width: 100%;
+	opacity: 0.3;
+}
+
+#readFullBio{
+	color: white;
+	margin-top: -140px;
+	background-size: cover;
+	background-position: right 80% top 100%;
+}
+
+.read-bio-icon{
+	margin-top: 120px;
+}
+
+.read-bio-text{
+	text-align: center;
+}
+
+.read-bio-text h2{
+	font-weight: 400;
+}
+
+.read-bio-text p{
+	padding-top: 20px;
+}
+
+.learn-more{
+	text-transform: uppercase;
+	/*font-weight: 700;*/
+}
+
+.learn-more:hover{
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+/*>>>>>>>>>>>> hero3 <<<<<<<<<<<<<<<<<*/
+
+.hero3{
+	color: #fff;;
+}
+
+.thumb-grid-columns{
+	font-family: "Open Sans", sans-serif;
+}
+
+.thumb-grid-container{
+	position: relative;
+}
+
+.thumb-wrapper img{
+	height: 400px;
+	max-height: 400px;
+}
+
+.greyScale{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+.thumb-grid-columns .vc_column-inner{
+	height: 500px;
+	max-height: 500px;
+	background-size: cover;
+	background-position: right 30% top 100%;
+}
+
+.thumb-grid-columns h2{
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.bio-thumb h2, .bio-thumb .learn-more h4{
+	color: black;
+}
+
+.compliment-thumb-text{
+	background-color: black;
+	opacity: 0.5;
+	padding: 190px 0 215px 0;
+}
+
+.thumb-grid-columns .learn-more{
+	position: relative;
+	color: white;
+	font-weight: 700;
+	display: block;
+}
+
+#grid-col3>.vc_column-inner{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contact-james-thumb-text{
+	padding: 180px 0 196px 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#grid-container{
+	text-align: center;
+	text-transform: uppercase;
+	max-height: 500px;
+	width: 100%;
+	display: block;
+	margin-top: 0;
+}
+
+#grid-container h2, .thumb-grid-columns h2{
+	font-family: "Open Sans", sans-serif;
+}
+
+#grid-container h4, .thumb-grid-columns h4{
+	font-weight: 400;
+}
+#grid-container .container{
+	padding-right: 0;
+	padding-left: 0;
+	max-width: 395px;
+}
+
+#grid-container .learn-more{
+	color: white;
+}
+
+#grid-col3{
+	margin-top: 450px;
+}
+
+.speaker{
+	background-color: #347ed1;
+	color: white;
+	padding: 131px 0;
+	display: block;
+}
+.bio{
+	background-color: white;
+	color: black;
+	padding: 91px 0;
+	display: block;
+}
+
+#bio-thumb>.learn-more{
+	color: black;
+}
+
+.testimonial{
+	background-color: #333;
+	color: white;
+	padding-top: 80px;
+	padding-bottom: 96px;
+	display: block;
+}
+
+	/*>>>>>>>	hero4  <<<<<<<<*/
+
+.home-hero4{
+	text-align: center;
+}
+
+.home-hero4 h2{
+	/*font-family: "Open Sans", sans-serif;*/
+	font-weight: 400;
+}
+
+.home-hero4 a h4{
+	font-weight: 400;
+}
+
+.book-img-carousal{
+	position: relative;
+	left: -15%;
+	margin-top: -30px;
+	margin-bottom: 120px;
+}
+
+	/*>>>>>>>>>>>>>>>>	BIO page  <<<<<<<<<<<<<<<<<<*/
+
+#bio-hero{
+	position: relative;
+	top: -90px;
+}
+
+#bio-hero-angled-break{
+	margin-top: -140px;
+
+}
+
+#bio-hero-angled-break p{
+	color: #565656;
+}
+
+.article-jumbo-title{
+	text-align: center;
+	margin-top: -30%;
+	color: #565656;
+}
+
+.bio-header-title h1{
+	font-size: 3.5em;
+	margin-top: -20px;
+	margin-left: -30px;
+}
+
+.bio-header-title span, .bio-header-title p{
+	font-family: "Droid Serif";
+	font-size: 2em;
+	font-style: italic;
+	margin-left: -30px;
+}
+
+.angled-break-section{
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.article-details{
+	margin-top: -20%;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.custom-separator{
+	margin-top: -20%;
+}
+
+.col2-article-details{
+	padding-left: 40px;
+	margin-top: -20%;
+}
+
+.bio-hero{
+	height: 700px;
+	width: 100%;
+	background-size: cover;
+}
+
+.bio-hero-text{
+	margin-top: 20%;
+	padding-bottom: 110px;
+}
+
+.bio-hero-text h1{
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: -10px;
+	font-size: 2.5rem;
+	line-height: 1.2em;
+}
+
+.bio-hero-text span, .bio-hero-text p:first-child{
+	color: #fff;
+	font-style: italic;
+}
+
+.bio-hero-text .learn-more{
+	font-weight: 700;
+}
+
+.bio-learn-more{
+	margin-top: 40px;
+}
+
+.bio-learn-more a:hover{
+	text-decoration: none;
+}
+
+.bio-learn-more img{
+	height: auto;
+	margin: -10px;
+}
+
+.bio-learn-more:hover{
+	opacity: 0.7;
+}
+
+#book-purchase-hero{
+	text-align: center;
+}
+
+#book-purchase-hero .wpb_wrapper{
+	padding-top: 30px;
+}
+
+
+#book-purchase-hero span{
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+#book-purchase-hero h2{
+	margin-top: -10px;
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.book-purchase{
+	display: block;
+	position: relative;
+	margin-top: -90px;
+}
+
+.book-purchase .learn-more{
+	position: absolute;
+	top: 380px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+.book-purchase .learn-more h4{
+	font-weight: 400;
+}
+
+.book-purchase .learn-more a:hover{
+	text-decoration: none;
+}
+
+/*>>>>>>>>>>	Contact Page	<<<<<<<<<<<<<<<<*/
+#contact-page-header{
+	position: relative;
+	top: -20px;
+	background-repeat: no-repeat;
+	background-position: right 85% top 27%;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+}
+
+.ja-address{
+	padding-left: 25px;
+}
+
+.contact-form, .search-form{
+	font-family: "Open Sans", sans-serif;
+	padding-left: 20px;
+}
+
+.contact-form div, .search-form div{
+	margin-bottom: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #292b2c;
+}
+
+.contact-form label, .search-form label{
+	display: inline-block;
+	padding-bottom: .5rem;
+}
+
+.contact-form input, .contact-form textarea, .search-form input{
+	display: block;
+	width: 95%;
+	padding: .5rem .75rem;
+	font-size: 1rem;
+	line-height: 1.25;
+	color: #464a4c;
+	background-color: #fff;
+	background-image: none;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: .25rem;
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.contact-form input[name="captcha_code"]{
+	width: 41%;
+}
+
+.contact-form input[type="submit"]{
+	margin-top: 20px;
+	background-color: #333333;
+	color: white;
+	height: 50px;
+	font-size: 2rem;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.25;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .5rem 1rem;
+	border-radius: .25rem;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.contact-form input[type="submit"]:hover{
+	opacity: 0.7;
+}
+
+.page-contact-details{
+	/*margin-left: 20px;*/
+	margin-bottom: 80px;
+}
+
+.contact-google-map iframe{
+	width: 90%;
+}
+
+
+/*>>>>>>>>>>>> footer <<<<<<<<<<<<<<<<<*/
+
+footer{
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	background-color: #565656;
+	/*margin-top: -75px;*/
+	/*margin-top: 0;*/
+	padding-top: 10px;
+	/*-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);*/
+	/*clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);*/
+}
+
+footer:before {
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 20%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: skewY(-1.5deg);
+	transform-origin: 100%;
+	top: -40px;
+	z-index: -1;
+}
+
+.footer-logo img{
+	margin-top: 40px;
+	height: auto;
+	width: 100%;
+}
+
+.footer-container {
+	text-align: center;
+}
+
+.footer-address{
+	margin-top: 40px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.footer-container .sign-up a{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+.footer-container .sign-up p{
+	font-family: 'Droid Serif', serif;
+}
+
+#menu-footermenu>li>a>span{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.copyright-nav-wrapper{
+	background-color: #333;
+	text-align: center;
+}
+
+.copyright{
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: grey;
+}
+
+.copyright span{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	color: #2e6da4;
+	font-style: normal;
+}
+
+/*	Speaker Page  */
+.secondary-h2-title h2{
+	color: #565656;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Book Page  */
+.book-cover{
+	padding-bottom: 30px;
+}
+
+/*	Testimonial Page  */
+.easy_testimonial:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+	padding: 0px;
+    margin-left: 0;
+    margin-top: 40px;
+    background: #EBEBEB;
+}
+.easy_testimonial_title{
+	color: #2196F3;
+	font-weight: 900;
+}
+
+.testimonial-client, .testimonial-position{
+	color: #5c5c5c;
+	font-weight: 900;
+}
+
+.easy_testimonial_title{
+	font-size: 1.3em;
+}
+
+.testimonial-client{
+	margin-top: 15px;
+}
+
+/*	with compliments page  */
+
+#compliment-page-seperator.custom-separator {
+	margin-top: 20px;
+}
+
+#subscribe-newsletter .secondary-h2-title h2 {
+	margin-bottom: 50px;
+}
+
+#subscription-form.contact-form input , #subscriptio-form.contact-form textarea{
+	font-size: inherit;
+	width: 95%;
+}
+
+#subscription-form.contact-form textarea{
+	font-size: 1em;
+}
+
+#subscription-form.contact-form input, #subscription-form.contact-form textarea{
+	margin-top: 5px;
+}
+
+/*	Thank you Page  */
+.thank-you-title h1{
+	font-size: 3.5em;
+    margin-top: -90px;
+    margin-left: -40px;
+}
+
+/*	post type / blog */
+.post-header-wrapper, .search-header-wrapper{
+	background-color: black;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	color: white;
+	margin-top: -85px;
+}
+
+.post-header-wrapper h1, .search-header-wrapper h1{
+	margin-top: 80px;
+	text-transform: uppercase;
+}
+
+.post-content-wrapper{
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+.search-content {
+	margin-top:60px;
+	margin-bottom: 40px;
+}
+
+.blog-box-wrapper:last-child{
+	margin-bottom: 50px;
+}
+
+.post-details-wrapper{
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.archive-title-wrapper, .error-page-content{
+	margin-top: 50px;
+}
+
+.error-page-content{
+	margin-bottom: 50px;
+}
+
+/*	archive and categories  */
+.testimonial-short-code{
+	margin-bottom: 20px
+}
+
+/*	on posts  */
+.posts-testimonial-title{
+	margin-top: 60px
+}
+
+
+/* [][][][][][][][][][][][][][] */
+/* >>>> MOBILE LANDSCAPE <<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (orientation: landscape) {
+
+
+
+}/* END mobile landscape */
+
+
+/* [][][][][][][][][][][][][][] */
+/* >>>>>>>>>> MOBILE <<<<<<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 350px){
+
+	.home-hero-text h1{
+		font-size: 3rem;
+	}
+
+	.speaker{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.bio{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.testimonial{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.testimonial .learn-more p{
+		padding: 0 30px;
+		height: 105px;
+	}
+
+	#grid-col3 {
+		margin-top: 523px;
+	}
+
+	/*  hero4 home page  */
+	.book-img-carousal{
+		left: 0;
+		/*margin-left: -80px;*/
+		margin-left: -20px;
+	}
+
+	.book-purchase .learn-more {
+		top: 500px;
+	}
+
+	#subscribe-newsletter .secondary-h2-title h2 {
+		margin-bottom: 70px;
+	}
+
+	#contact-page-header h1{
+		margin-top: -80px;
+	}
+}
+/*	end iPhone 6*/
+
+
+/* [][][][][][][][][][][][][][] */
+/* >>>>>>>>>> MOBILE LG <<<<<<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 410px){
+	.book-img-carousal{
+		margin-left: 0;
+	}
+
+	#subscription-form.contact-form textarea {
+		width: 95%;
+	}
+}
+
+/* [][][][][][][][][][][][][][] */
+/* >>>>>>>>>> DESKTOP SM <<<<<<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 768px){
+
+        /*	header  */
+
+	.navbar-header{
+		padding-left: 30px;
+	}
+
+	.navbar-brand{
+		margin-right: 335px;
+	}
+
+	.menu-header-menu-container{
+		margin-left: 20px;
+	}
+
+	.social-icon-header-wrapper{
+		margin-left: 15px;
+	}
+
+        /*>>>>>>>>>>	home page  <<<<<<<<<<<*/
+
+	.home-hero-text h1{
+		font-size: 2.5rem;
+	}
+
+	.read-bio-icon{
+		margin-top: 0;
+	}
+
+	.read-bio-text{
+		text-align: left;
+	}
+
+	.home-hero4{
+		text-align: left;
+	}
+
+	.thumb-grid-columns{
+		display: block;
+	}
+
+	#grid-container .container{
+		max-width: 295px;
+		margin-left: 10px;
+		margin-right: 0;
+	}
+
+	#grid-container {
+		margin-top: 0;
+	}
+
+	.compliment-thumb-text {
+		padding: 230px 0 195px 0;
+	}
+
+	.contact-james-thumb-text {
+		padding: 220px 0 205px 0;
+	}
+
+	.speaker {
+		padding: 81px 0;
+		margin-right: -10px;
+	}
+
+	.bio{
+		background-color: white;
+		color: black;
+		padding: 92px 0;
+		display: block;
+		/*margin-right: -15px;*/
+		margin-left: -20px;
+	}
+
+	.testimonial {
+		padding-top: 90px;
+		padding-bottom: 1px;
+	}
+
+	.testimonial .learn-more p {
+		height: 147px;
+	}
+
+	#grid-col3{
+		margin-top: 0;
+	}
+
+	.thumb-grid-columns .learn-more{
+		visibility: hidden;
+		margin-top: -45px;
+	}
+
+	.book-img-carousal{
+		margin-left: -60px;
+		margin-bottom: 0;
+	}
+
+
+
+		/*>>>>>>>	Bio Page <<<<<<<<<*/
+
+	#bio-hero{
+		top: -120px;
+		height: 700px;
+		max-height: 700px;
+	}
+
+	.bio-hero-text{
+		margin-top: 0;
+	}
+
+	.bio-hero-text h1{
+		font-size: 3rem;
+	}
+
+	#bio-hero-angled-break{
+		padding-top: 70px;
+		margin-top: -170px;
+	}
+
+	.angled-break-section{
+		padding-left: 80px;
+	}
+
+	.article-jumbo-title{
+		text-align: left;
+		margin-top: 0;
+		padding-left: 50px;
+	}
+
+	.bio-header-title span {
+		margin-left: -30px;
+	}
+
+	.col2-article-details{
+		margin: 0;
+	}
+
+	.article-details{
+		margin-top: 0;
+		padding-left: 50px;
+	}
+
+	.custom-separator{
+		margin-top: 0;
+	}
+
+	.custom-separator-element{
+		width: 75%;
+	}
+
+	#book-purchase-hero{
+		text-align: left;
+		margin-top: 50px;
+	}
+
+	.book-purchase .learn-more {
+		top: 200px;
+		visibility: hidden;
+	}
+
+	/*>>>>>>>>>> Contact Page <<<<<<<<<<<<<*/
+
+	.ja-address{
+		padding-left: 0;
+	}
+
+	.page-contact-details{
+		margin-bottom: 0;
+	}
+
+	#contact-page-header {
+		background-position: right 100% top 30%;
+	}
+
+	#contact-page-header h1{
+		font-size: 5rem;
+	}
+
+	.contact-form{
+		padding-left: 0;
+		padding-bottom: 100px;
+	}
+
+	.google-maps{
+		margin-bottom: -20px;
+	}
+
+	.contact-google-map iframe{
+		width: 100%;
+	}
+
+	/*>>>>>>>>>> footer <<<<<<<<<<<<<*/
+	.footer-container{
+		text-align: left;
+	}
+
+	.footer-address{
+		margin-top: 20px;
+		margin-bottom: 40px;
+		font-size: 15px;
+		line-height: 0.8em;
+		padding-right:0;
+	}
+
+	.sign-up{
+		margin-left: 80px;
+	}
+
+	.copyright-nav-wrapper {
+		text-align: left;
+	}
+
+	.footer-container .sign-up a{
+		margin: 0;
+	}
+
+	#menu-footermenu{
+		width: 120%;
+	}
+
+	#menu-footermenu>li>a {
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+
+
+} /* END 768px */
+
+/* [][][][][][][][][][][][][][] */
+/* >>>> TABLET LANDSCAPE <<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 768px) and (orientation: landscape){
+
+} /* END 768px landscape*/
+
+
+/* [][][][][][][][][][][][][][] */
+/* >>>> TABLET SAMSUNG <<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 800px){
+	.testimonial{
+		padding-bottom: 15px;
+	}
+} /* END 800px */
+
+/* [][][][][][][][][][][][][][] */
+/* >>>> TABLET SAMSUNG <<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 932px){
+	.testimonial{
+		padding-bottom: 36px;
+	}
+
+	.testimonial .learn-more p {
+		height: 105px;
+	}
+
+} /* END 800px */
+
+
+/* [][][][][][][][][][][][][][] */
+/* >>>>>>>> DESKTOP MD <<<<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 992px){
+
+	/*	header  */
+	.navbar-brand{
+		margin-right: 100px;
+	}
+
+	/*	home page  */
+
+	.home-hero-text h1{
+		font-size: 3.5rem;
+		line-height: 1em;
+	}
+
+	#grid-container {
+		margin-top: -1px;
+	}
+
+	#grid-container .container {
+		max-width: 410px;
+	}
+
+	#grid-container .learn-more{
+		visibility: hidden;
+	}
+
+	.speaker {
+		padding: 81px 0;
+	}
+
+	.bio {
+		padding: 92px 0;
+		margin-right: -10px;
+	}
+
+	.testimonial {
+		padding-top: 80px;
+		padding-bottom: 47px;
+	}
+
+	/*  hero4 home page  */
+	.book-img-carousal{
+		left: 0;
+		margin-left: -35px;
+	}
+
+	/* bio page*/
+
+	.bio-hero-text h1 {
+		font-size: 4rem;
+		line-height: 1.1em;
+	}
+
+	.book-purchase .learn-more{
+		display: block;
+		text-decoration: none;
+		visibility: hidden;
+	}
+
+	/* contact page	*/
+
+	#contact-page-header h1 {
+		margin-top: -200px;
+	}
+
+	#contact-page-header {
+		background-position: left 160% top 30%;
+	}
+
+	/*	footer  */
+
+	#menu-footermenu{
+		width: 100%;
+	}
+	.sign-up{
+		margin-left: -100px;
+	}
+
+} /* END 992px */
+
+/* [][][][][][][][][][][][][][] */
+/* >>>>>>>> DESKTOP LG <<<<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 1024px){
+
+	/*	header  */
+
+	#desktop-nav{
+		display: block;
+	}
+
+	#mobile-nav{
+		display: none;
+	}
+
+	.navbar-brand{
+		margin-right: 0;
+	}
+
+	.navbar-header{
+		padding-left: 0;
+	}
+
+	.logo{
+		width: 240px;
+	}
+	.header-nav-wrapper{
+		margin-top: 10px;
+		/*float: right;*/
+	}
+
+	.menu-header-menu-container{
+		margin-left: 0;
+	}
+
+	.nav>li>a {
+		padding: 10px 10px;
+	}
+
+	.nav>li>a>img {
+		/*padding-right: 10px;*/
+	}
+
+	#grid-container{
+		margin-top: 0;
+	}
+
+	.speaker {
+		padding: 91px 0;
+	}
+
+	.bio {
+		padding: 102px 0;
+	}
+
+	.testimonial{
+		padding-top: 80px;
+		padding-bottom: 30px;
+	}
+
+	.google-maps{
+		margin-bottom: -30px;
+	}
+
+} /* END 1024px */
+
+/* [][][][][][][][][][][][][][] */
+/* >>>>>>>> DESKTOP LG <<<<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 1120px){
+	.testimonial{
+		padding-bottom: 50px;
+	}
+
+	/*  hero4 home page  */
+	.book-img-carousal{
+		margin-left: 60px;
+	}
+} /* END 1120px */
+
+/* [][][][][][][][][][][][][][] */
+/* >>>>>>>> DESKTOP LG <<<<<<<< */
+/* [][][][][][][][][][][][][][] */
+@media screen and (min-width: 1200px){
+
+	/*	header  */
+
+	.logo{
+		width: 300px;
+	}
+
+	.navbar-header{
+		padding-left: 10px;
+	}
+
+	.header-nav-wrapper{
+		margin-top: 10px;
+		float: right;
+	}
+
+	.nav>li>a {
+		padding: 15px 15px;
+	}
+
+	.nav>li>a>img {
+		padding-right: 10px;
+	}
+
+	/*	home page  */
+
+	.home-hero-text h1{
+		font-size: 4rem;
+	}
+
+	#grid-container{
+		/*margin-top: 24px;*/
+
+	}
+
+	.bio{
+		margin-right: 0;
+	}
+
+	#grid-container .container {
+		max-width: 550px;
+	}
+
+	.testimonial{
+		padding-bottom: 28px;
+	}
+
+	/*	contact page  */
+	#contact-page-header h1 {
+		margin-top: -30px;
+	}
+
+	.google-maps{
+		margin-bottom: -50px;
+	}
+
+	/*	with compliment page  */
+
+	#subscription-form.contact-form input{
+		width: 101%;
+	}
+
+	#subscription-form.contact-form textarea{
+		width: 100%;
+	}
+	
+	#subscription-form.contact-form input[type="submit"] {
+		width: 100%;
+	}
+
+	/*	footer	*/
+	.sign-up{
+		margin-left: 0;
+	}
+
+	#menu-footermenu{
+		padding-left: 135px;
+	}
+} /* END 1200px */
